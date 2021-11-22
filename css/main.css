@@ -31,6 +31,11 @@ section {
 section .container {
   width: 100%;
   max-width: 1430px;
+  overflow: hidden;
+}
+
+.transfer {
+  display: block;
 }
 
 .header {
@@ -217,17 +222,13 @@ section .container {
 
 .features_slider_wrap_block {
   margin-top: 80px;
-  max-width: 1440px;
+  max-width: 1435px;
 }
 
 .features_slider_title {
   font-weight: 800;
   font-size: 55px;
   color: #272D4E;
-}
-
-.features_slider_block {
-  padding: 0 45px;
 }
 
 .features_slider_block_img {
@@ -256,5 +257,35 @@ section .container {
 
 .features_slider .slick-dots li.slick-active button:before {
   opacity: 0.25;
+}
+
+.info {
+  background: url(../img/info/sectionbg.png);
+  padding: 165px 0;
+  z-index: 0;
+}
+
+.info_reply_1 {
+  margin-left: 500px;
+}
+
+.info_reply_2 {
+  margin-top: 200px;
+  margin-left: 280px;
+}
+
+.info_reply_title {
+  font-size: 36px;
+  color: #fff;
+}
+
+.info_reply_text {
+  font-size: 18px;
+  line-height: 35px;
+  color: #fff;
+}
+
+.info_reply_text_wrap {
+  margin-top: 41px;
 }
 /*# sourceMappingURL=main.css.map */
