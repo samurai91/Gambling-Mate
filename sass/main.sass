@@ -198,9 +198,62 @@ section
         font-size: 55px
         font-weight: 700
         color: #272D4E
+        &_wrap
+            position: relative
+            &::after
+                content: ""
+                position: absolute
+                left: 139px
+                bottom: -180px 
+                height: 154px
+                width: 154px
+                background: url("../img/testimonials/Ellipse 1.png") no-repeat
+            &::before
+                content: ""
+                position: absolute
+                bottom: -145px
+                right: 160px
+                height: 154px
+                width: 154px
+                background: url("../img/testimonials/Ellipse 2.png") no-repeat
     &_slider
         display: flex
         justify-content: center
+        &::after
+            content: ""
+            position: absolute
+            left: -147px
+            bottom: 393px
+            height: 154px
+            width: 154px
+            background: url("../img/testimonials/Ellipse 3.png") no-repeat
+        &::before
+            content: ""
+            position: absolute
+            bottom: 342px
+            right: -20px
+            height: 154px
+            width: 154px
+            background: url("../img/testimonials/Ellipse 4.png") no-repeat
+        &_wrap
+            margin-top: 173px
+            position: relative
+            &::after
+                content: ""
+                position: absolute
+                left: 0
+                bottom: 50px
+                height: 154px
+                width: 154px
+                background: url("../img/testimonials/Ellipse 5.png") no-repeat
+            &::before
+                content: ""
+                position: absolute
+                bottom: 0
+                right: 90px
+                height: 154px
+                width: 154px
+                background: url("../img/testimonials/Ellipse 6.png") no-repeat
         &_block
             display: flex
             align-items: center
@@ -262,6 +315,6 @@ section
                 font-size: 65px
                 opacity: 1
             &_left
-                right: 580px
+                right: 500px
             &_right
-                right: -30px
+                right: 420px
