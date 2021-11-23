@@ -36,8 +36,10 @@ section .container {
 }
 
 .header {
-  background: -webkit-gradient(linear, left top, left bottom, from(#d8d2c0), to(#ffffff));
-  background: linear-gradient(to bottom, #d8d2c0 0%, #ffffff 100%);
+  background-color: rgba(229, 239, 255, 0.21);
+  background: filter-gradient(#e5efff, #e5efff, vertical);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(229, 239, 255, 0.21)), color-stop(15%, rgba(152, 128, 66, 0.28)), color-stop(85%, rgba(113, 104, 75, 0.18)), to(rgba(229, 239, 255, 0.18)));
+  background: linear-gradient(top, rgba(229, 239, 255, 0.21) 0%, rgba(152, 128, 66, 0.28) 15%, rgba(113, 104, 75, 0.18) 85%, rgba(229, 239, 255, 0.18) 100%);
   height: 1188px;
 }
 
@@ -58,7 +60,7 @@ section .container {
   height: 1666px;
   width: 1767px;
   position: absolute;
-  bottom: 0;
+  bottom: 83px;
   opacity: 0.4;
   z-index: 0;
 }
@@ -148,6 +150,7 @@ section .container {
 }
 
 .features {
+  margin-top: -90px;
   padding-bottom: 90px;
 }
 
@@ -473,7 +476,10 @@ section .container {
 }
 
 .faq {
+  position: relative;
   margin-top: -50px;
+  padding-bottom: 165px;
+  background: url("../img/faq/FAQ_bg.png") right bottom no-repeat;
 }
 
 .faq_title {
@@ -484,22 +490,43 @@ section .container {
 }
 
 .faq_answer {
-  margin-top: 50px;
+  margin-top: 55px;
+  max-width: 1100px;
 }
 
 .faq_answer_wrap {
-  margin-top: 6px;
-  max-width: 1190px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 30px;
 }
 
 .faq_answer_title {
+  position: relative;
   font-size: 36px;
   font-weight: 700;
   color: #272D4E;
 }
 
+.faq_answer_title::after {
+  content: "";
+  position: absolute;
+  left: -63px;
+  bottom: 0;
+  background: url("../img/faq/Vector.svg") no-repeat;
+  height: 42px;
+  width: 42px;
+}
+
 .faq_answer_text {
-  margin-top: 30px;
+  margin-top: 20px;
   font-size: 20px;
   line-height: 32px;
   color: #000;
