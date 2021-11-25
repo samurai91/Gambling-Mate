@@ -6,7 +6,7 @@
   text-decoration: none;
   list-style: none;
   font-family: "Roboto Slab", serif;
-  z-index: 0;
+  z-index: 2;
 }
 
 body {
@@ -60,7 +60,7 @@ section .container {
   height: 1666px;
   width: 1767px;
   position: absolute;
-  bottom: 83px;
+  bottom: 10px;
   opacity: 0.4;
   z-index: 0;
 }
@@ -150,7 +150,8 @@ section .container {
 }
 
 .features {
-  margin-top: -90px;
+  position: relative;
+  margin-top: -40px;
   padding-bottom: 90px;
 }
 
@@ -181,6 +182,18 @@ section .container {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.features_info_statistics::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 150px;
+  width: 100%;
+  background-color: rgba(227, 223, 212, 0);
+  background: filter-gradient(#e3dfd4, #e3dfd4, vertical);
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(227, 223, 212, 0)), color-stop(58%, rgba(227, 223, 212, 0.58)), to(rgba(227, 223, 212, 0)));
+  background: linear-gradient(to top, rgba(227, 223, 212, 0) 0%, rgba(227, 223, 212, 0.58) 58%, rgba(227, 223, 212, 0) 100%);
 }
 
 .features_info_statistics_block {
@@ -460,6 +473,7 @@ section .container {
   font-size: 50px;
   color: #000;
   opacity: 0.35;
+  z-index: 3;
 }
 
 .testimonials_slider_arrow:hover {
@@ -564,7 +578,7 @@ section .container {
   content: "";
   position: absolute;
   bottom: 50%;
-  left: 110px;
+  left: 150px;
   -webkit-transform: translateY(50%);
           transform: translateY(50%);
   background: url("../img/cta/Mask Group 2.png") no-repeat;
@@ -579,7 +593,7 @@ section .container {
 }
 
 .cta_title_wrap {
-  margin-left: 150px;
+  margin-left: 175px;
 }
 
 .cta_btn {
@@ -612,5 +626,146 @@ section .container {
 
 .footer_img_wrap_icon {
   margin-left: 40px;
+}
+
+.popup {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 3;
+}
+
+.popup::before {
+  content: "";
+  height: 101%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #000;
+  opacity: 0.8;
+  z-index: 4;
+}
+
+.popup_close {
+  position: absolute;
+  top: -170px;
+  right: -105px;
+  height: 50px;
+  width: 50px;
+  background: transparent;
+}
+
+.popup_close::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 3px;
+  width: 100%;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  background: #fff;
+}
+
+.popup_close::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 3px;
+  width: 100%;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  background: #fff;
+}
+
+.popup_content {
+  max-height: 800px;
+  max-width: 800px;
+  background: #fff;
+  padding: 120px 50px;
+  border-radius: 7px;
+  z-index: 5;
+}
+
+.popup_content_wrap {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.popup_content_title {
+  margin-top: 20px;
+  color: #272D4E;
+  text-align: center;
+  font-size: 40px;
+}
+
+.popup_content_form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.popup_content_form_ansver {
+  position: absolute;
+  top: -18px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  display: block;
+  padding: 5px;
+  background: #fff;
+  font-size: 18px;
+  z-index: 5;
+}
+
+.popup_content_form_ansver_name {
+  width: 50%;
+}
+
+.popup_content_form_field {
+  border: 1px solid #000;
+  border-radius: 6px;
+  font-size: 32px;
+  padding-left: 10px;
+}
+
+.popup_content_form_wrap {
+  position: relative;
+  margin-top: 50px;
+}
+
+.popup_content_form_btn {
+  margin-top: 50px;
+  padding: 10px 60px;
+  background: transparent;
+  color: #272D4E;
+  font-size: 20px;
+  border: 1px solid #000;
+  border-radius: 25px;
 }
 /*# sourceMappingURL=main.css.map */

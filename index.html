@@ -24,17 +24,17 @@
                 <div class="header_menu_contacts">
                     <div class="header_menu_contacts_left">
                         <div class="header_menu_contacts_left_1">
-                            <a href="" class="header_menu_contacts_left_link">О нас</a>
+                            <a href="#features" class="header_menu_contacts_left_link">О нас</a>
                         </div>
                         <div class="header_menu_contacts_left_2">
-                            <a href="" class="header_menu_contacts_left_link">Наши преимущества</a>
+                            <a href="#info" class="header_menu_contacts_left_link">Наши преимущества</a>
                         </div>
                         <div class="header_menu_contacts_left_3">
-                            <a href="" class="header_menu_contacts_left_link">Отзывы</a>
+                            <a href="#testimonials" class="header_menu_contacts_left_link">Отзывы</a>
                         </div>
                     </div>
                     <div class="header_menu_contacts_right">
-                        <button class="header_menu_contacts_right_btn" id="header_btn">
+                        <button class="header_menu_contacts_right_btn  popup_btn" id="header_btn">
                             Контакты
                         </button>
                     </div>
@@ -47,7 +47,7 @@
                             Улучшите навык игры в покер вместе с 
                             <p class="header_hero_text_title_bold">Gambling Mate!</p>
                         </h1>
-                        <button class="header_hero_text_btn">Оставить заявку</button>
+                        <button class="header_hero_text_btn  popup_btn">Оставить заявку</button>
                     </div>
                 </div>
                 <div class="header_hero_right">
@@ -56,7 +56,7 @@
             </div>
         </div>
     </section>
-    <section class="features">
+    <section class="features" id="features">
         <div class="container">
             <div class="features_info">
                 <h2 class="features_info_title">Присоединяйся к нашей команде</h2>
@@ -131,7 +131,7 @@
             </div>
         </div>
     </section>
-    <section class="info">
+    <section class="info" id="info">
         <div class="container">
             <div class="info_reply info_reply_1">
                 <h3 class="info_reply_title">
@@ -174,7 +174,7 @@
             </div>
         </div>
     </section>
-    <section class="testimonials">
+    <section class="testimonials" id="testimonials">
         <div class="container">
             <div class="testimonials_title_wrap">
                 <h2 class="testimonials_title">Отзывы наших игроков</h2>
@@ -183,7 +183,7 @@
                 <div class="testimonials_slider">
                     <div class="testimonials_slider_block">
                         <div class="testimonials_slider_block_text">
-                            Сайт будет полезен и новичкам в покере и более продвинутым игрокам. Отличная команда тренеров, отличная команда ребят занимающихся развитием сайта. Большой респект и желаю вам дальнейшего совершенствования!
+                            Сайт будет полезен и новичкам в покере и более продвинутым игрокам. Отличная команда тренеров, отличная команда ребят, занимающихся развитием сайта. Большой респект и желаю вам дальнейшего совершенствования!
                         </div>
                     </div>
                     <div class="testimonials_slider_block">
@@ -238,11 +238,11 @@
             <div class="cta_wrap">
                 <div class="cta_title_wrap">
                     <h3 class="cta_title">
-                        Оставьте заявку и мы свяжемся с Вами
+                        Оставьте заявку, и мы свяжемся с Вами
                     </h3>
                 </div>
                 <div class="cta_btn_wrap">
-                    <button class="cta_btn">
+                    <button class="cta_btn popup_btn">
                         Оставить заявку
                     </button>
                 </div>
@@ -264,7 +264,28 @@
             </div>
         </div>
     </section>
-
+<section class="popup">
+    <div class="popup_content">
+        <div class="popup_content_wrap">
+            <button class="popup_close"></button>
+            <h3 class="popup_content_title">
+                Оставьте свои данные, чтобы наш 
+                <span class="transfer">менеджер мог с вами связаться.</span>
+            </h3>
+            <form action="#" class="popup_content_form">
+                <div class="popup_content_form_wrap popup_content_form_email">
+                    <label for="" class="popup_content_form_ansver popup_content_form_ansver_email">Ваш емейл?</label>
+                    <input type="email" class="popup_content_form_field">
+                </div>
+                <div class="popup_content_form_wrap popup_content_form_name">
+                    <label for="" class="popup_content_form_ansver popup_content_form_ansver_name">Как к вам обращаться?</label>
+                    <input type="text" class="popup_content_form_field">
+                </div>
+                <button class="popup_content_form_btn">отправить</button>
+            </form>
+        </div>
+    </div>
+</section>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.2/jquery.js" integrity="sha512-hSKHxREB9rY7xOHiPk3wpBpLBMvAachCAqQK2araceNnIQpCCzxjl/iHbM5ugbW19rd1zSIr/akELF14yIFtyw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script type="text/javascript" src="slick/slick.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
