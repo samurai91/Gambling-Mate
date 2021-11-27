@@ -11,24 +11,25 @@
 
 body
     background: #fff
+    overflow-x: hidden
 
 section
     display: flex
     flex-direction: row
     justify-content: center
-    .container
-        width: 100%
-        max-width: 1430px
-        // overflow: hidden
+.container
+    width: 100%
+    max-width: 1430px
     
 .transfer
     display: block
 
 .header
+    position: relative
     background-color: rgba(229,239,255,0.21)
     background: filter-gradient(#e5efff, #e5efff, vertical)
     background: linear-gradient(to top, rgba(229,239,255,0.21) 0%, rgba(152,128,66,0.28) 15%, rgba(113,104,75,0.18) 85%, rgba(229,239,255,0.18) 100%)
-    height: 1188px
+    min-height: 1188px
     &::before
         content: ""
         background: url("../img/header/klipartz 1.png")
@@ -43,8 +44,11 @@ section
         background: url("../img/header/Vector.svg") no-repeat
         height: 1666px
         width: 1767px
+        max-width: 100%
         position: absolute
+        left: 50%
         bottom: 10px
+        transform: translateX(-50%)
         opacity: 0.4
         z-index: 0      
 
@@ -61,8 +65,7 @@ section
             &_left
                 @extend .header_menu_contacts
                 &_2
-                    margin-left: 64px
-                    margin-right: 64px
+                    margin: 0 64px
                 &_link
                     color: #272D4E
                     font-size: 18px
@@ -157,14 +160,17 @@ section
             font-size: 55px
             color: #272D4E
         &_block
+            margin-left: 22px
             &_img
                 border-radius: 15px
+                max-width: 100%
             &_title
                 margin-top: 40px
                 font-size: 35px
                 font-weight: 700
                 color: #272D4E
             &_text
+                max-width: 430px
                 margin-top: 20px
                 font-size: 18px
                 font-weight: 500
@@ -180,7 +186,7 @@ section
             opacity: 0.25
 
 .info
-    background: url(../img/info/section-bg.png)
+    background: url(../img/info/section-bg.png) center center no-repeat
     padding: 165px 0
     z-index: 0
     &_reply
@@ -326,6 +332,7 @@ section
             opacity: 0.35
             z-index: 3
             &:hover
+                bottom: 95px
                 font-size: 65px
                 opacity: 1
             &_left
@@ -517,4 +524,10 @@ section
                 font-size: 20px
                 border: 1px solid #000
                 border-radius: 25px
-            
+
+@import '_media-1700'           
+@import '_media-1350' 
+@import '_media-1200' 
+@import '_media-992' 
+@import '_media-768' 
+@import '_media-576' 

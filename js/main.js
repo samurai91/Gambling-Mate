@@ -3,7 +3,23 @@ $(document).ready(function(){
         slidesToShow: 3,
         slidesToScroll: 1,
         arrows: false,
-        dots: true
+        dots: true,
+        responsive: [
+          {
+            breakpoint: 1350,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1
+            }
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+        ]
     });
     $('.testimonials_slider').slick({
         slidesToShow: 1,
@@ -23,10 +39,6 @@ $(document).ready(function(){
       $('.popup').fadeIn();
     });
     $('.popup_close').on('click', function (events) {
-      event.preventDefault();
-      $('.popup').fadeOut();
-    });
-    $('.popup').on('click', function (events) {
       event.preventDefault();
       $('.popup').fadeOut();
     });
